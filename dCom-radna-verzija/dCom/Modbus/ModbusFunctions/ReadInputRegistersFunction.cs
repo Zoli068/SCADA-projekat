@@ -21,12 +21,16 @@ namespace Modbus.ModbusFunctions
             CheckArguments(MethodBase.GetCurrentMethod(), typeof(ModbusReadCommandParameters));
         }
 
+        //Zahtev za analogni ulazi (i Brojaci)
+
         /// <inheritdoc />
         public override byte[] PackRequest()
         {
             //TO DO: IMPLEMENT
             throw new NotImplementedException();
         }
+
+        //Odgovor 
 
         /// <inheritdoc />
         public override Dictionary<Tuple<PointType, ushort>, ushort> ParseResponse(byte[] response)

@@ -6,3 +6,12 @@ C:\Users\Racunar1\Desktop\Ognjen\SCADA\dCom\ProcessingModule\bin\Debug\Modbus.dl
 C:\Users\Racunar1\Desktop\Ognjen\SCADA\dCom\ProcessingModule\bin\Debug\Common.pdb
 C:\Users\Racunar1\Desktop\Ognjen\SCADA\dCom\ProcessingModule\obj\Debug\ProcessingModule.dll
 C:\Users\Racunar1\Desktop\Ognjen\SCADA\dCom\ProcessingModule\obj\Debug\ProcessingModule.pdb
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\ProcessingModule\bin\Debug\ProcessingModule.dll
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\ProcessingModule\bin\Debug\ProcessingModule.pdb
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\ProcessingModule\bin\Debug\Common.dll
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\ProcessingModule\bin\Debug\Common.pdb
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\ProcessingModule\obj\Debug\ProcessingModule.csproj.AssemblyReference.cache
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\ProcessingModule\obj\Debug\ProcessingModule.csproj.CoreCompileInputs.cache
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\ProcessingModule\obj\Debug\Processi.B4D6C848.Up2Date
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\ProcessingModule\obj\Debug\ProcessingModule.dll
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\ProcessingModule\obj\Debug\ProcessingModule.pdb

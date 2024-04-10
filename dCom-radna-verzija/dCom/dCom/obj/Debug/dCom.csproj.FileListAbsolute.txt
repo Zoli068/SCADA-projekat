@@ -21,3 +21,29 @@ C:\Users\Racunar1\Desktop\Ognjen\SCADA\dCom\dCom\obj\Debug\dCom.Properties.Resou
 C:\Users\Racunar1\Desktop\Ognjen\SCADA\dCom\dCom\obj\Debug\dCom.csproj.GenerateResource.Cache
 C:\Users\Racunar1\Desktop\Ognjen\SCADA\dCom\dCom\obj\Debug\dCom.exe
 C:\Users\Racunar1\Desktop\Ognjen\SCADA\dCom\dCom\obj\Debug\dCom.pdb
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\bin\Debug\RtuCfg.txt
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\bin\Debug\dCom.exe.config
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\bin\Debug\dCom.exe
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\bin\Debug\dCom.pdb
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\bin\Debug\Common.dll
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\bin\Debug\Modbus.dll
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\bin\Debug\ProcessingModule.dll
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\bin\Debug\Common.pdb
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\bin\Debug\Modbus.pdb
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\bin\Debug\ProcessingModule.pdb
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\dCom.csproj.AssemblyReference.cache
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\ControlWindow.g.cs
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\MainWindow.g.cs
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\App.g.cs
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\dCom_MarkupCompile.cache
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\dCom_MarkupCompile.lref
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\ControlWindow.baml
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\MainWindow.baml
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\dCom.g.resources
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\dCom.Properties.Resources.resources
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\dCom.csproj.GenerateResource.cache
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\dCom.csproj.CoreCompileInputs.cache
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\dCom.csproj.Up2Date
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\dCom.exe
+D:\Fakultet\III godina\akvizicioni upr. sis\Projekat\SCADA-projekat\dCom-radna-verzija\dCom\dCom\obj\Debug\dCom.pdb
