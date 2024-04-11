@@ -26,8 +26,26 @@ namespace Modbus.ModbusFunctions
         /// <inheritdoc />
         public override byte[] PackRequest()
         {
-            //TO DO: IMPLEMENT
-            throw new NotImplementedException();
+            //duzina zahteva je uvek 12byte
+            byte[] message = new byte[12];
+
+            //zaglavlja zahteva: Transaction Id (2 byte), Protocol Id (2 byte), Length (2 byte), Unit Id (1 Byte)
+
+            //short vrednost -> moramo prebaciti u Network Order
+            Buffer.BlockCopy(BitConverter.GetBytes(IPAddress.HostToNetworkOrder((short)CommandParameters.TransactionId)), 0, message, 0, 2);
+            Buffer.BlockCopy(BitConverter.GetBytes(IPAddress.HostToNetworkOrder((short)CommandParameters.ProtocolId)), 0, message, 2, 2);
+            Buffer.BlockCopy(BitConverter.GetBytes(IPAddress.HostToNetworkOrder((short)CommandParameters.Length)), 0, message, 4, 2);
+
+            //vrednosti koji su samo 1 byte, samo prekopiramo
+            message[6] = CommandParameters.UnitId;
+
+
+            //sadrzaj zahteva: Function Id (1 byte), Start Address (1 byte), Quantity (2 byte)
+            message[7] = CommandParameters.FunctionCode;
+            Buffer.BlockCopy(BitConverter.GetBytes(IPAddress.HostToNetworkOrder((short)((ModbusReadCommandParameters)CommandParameters).StartAddress)), 0, message, 8, 2);
+            Buffer.BlockCopy(BitConverter.GetBytes(IPAddress.HostToNetworkOrder((short)((ModbusReadCommandParameters)CommandParameters).Quantity)), 0, message, 10, 2);
+
+            return message;
         }
 
         //Odgovor 
@@ -35,8 +53,44 @@ namespace Modbus.ModbusFunctions
         /// <inheritdoc />
         public override Dictionary<Tuple<PointType, ushort>, ushort> ParseResponse(byte[] response)
         {
-            //TO DO: IMPLEMENT
-            throw new NotImplementedException();
+            Dictionary<Tuple<PointType, ushort>, ushort> responseValues = new Dictionary<Tuple<PointType, ushort>, ushort>();
+
+
+            //Zaglavlja : 7 Byte
+            //Sadrzaj odgovora: Function code (1 byte), Byte Count (1 byte), Data (N Bytes)
+
+            //Ako imamo gresku onda Function code bice: Original Function Code + 0x80
+            //i u Byte Count imacemo vrsta Error-a
+            if (response[7] == CommandParameters.FunctionCode + 0x80)
+            {
+                HandeException(response[8]);
+            }
+            else
+            {
+                int counter = 0;
+                ushort adress = ((ModbusReadCommandParameters)CommandParameters).StartAddress;
+                ushort value = 0;
+
+
+                //response[8] -> ByteCount
+                //idemo byte po byte
+                for (int i = 0; i < response[8]; i = i + 2)
+                {
+
+                    //ovo sad je u Network redosled
+                    value = BitConverter.ToUInt16(response, 9 + i);
+                    value = (ushort)IPAddress.NetworkToHostOrder((short)value);
+
+
+                    responseValues.Add(new Tuple<PointType, ushort>(PointType.ANALOG_INPUT, adress), value);
+
+                    counter++;
+                    adress++;
+
+                }
+            }
+
+            return responseValues;
         }
     }
 }

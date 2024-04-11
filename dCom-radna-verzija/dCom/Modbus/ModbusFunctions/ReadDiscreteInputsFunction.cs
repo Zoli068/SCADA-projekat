@@ -85,7 +85,6 @@ namespace Modbus.ModbusFunctions
                         value = (ushort)(temp & mask);
                         temp >>= 1;
 
-                        //DIGITAL_INPUT jer citamo digitalan ulaz
                         responseValues.Add(new Tuple<PointType, ushort>(PointType.DIGITAL_INPUT, adress), value);
 
                         counter++;

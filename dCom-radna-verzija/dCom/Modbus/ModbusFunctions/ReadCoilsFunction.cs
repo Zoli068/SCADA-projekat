@@ -86,7 +86,6 @@ namespace Modbus.ModbusFunctions
                         value = (ushort)(temp & mask);
                         temp >>= 1;
 
-                        //DIGITAL_OUTPUT jer citamo digitalne registre
                         responseValues.Add(new Tuple<PointType, ushort>(PointType.DIGITAL_OUTPUT, adress), value);
 
                         counter++;
