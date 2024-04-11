@@ -40,7 +40,7 @@ namespace Modbus.ModbusFunctions
             message[6] = CommandParameters.UnitId;
 
 
-            //sadrzaj zahteva: Function Id (1 byte), Start Address (1 byte), Quantity (2 byte)
+            //sadrzaj zahteva: Function Code (1 byte), Start Address (2 byte), Quantity (2 byte)
             message[7] = CommandParameters.FunctionCode;
             Buffer.BlockCopy(BitConverter.GetBytes(IPAddress.HostToNetworkOrder((short)((ModbusReadCommandParameters)CommandParameters).StartAddress)), 0, message, 8, 2);
             Buffer.BlockCopy(BitConverter.GetBytes(IPAddress.HostToNetworkOrder((short)((ModbusReadCommandParameters)CommandParameters).Quantity)), 0, message, 10, 2);
@@ -68,7 +68,7 @@ namespace Modbus.ModbusFunctions
             else
             {
                 int counter = 0;
-                ushort adress = ((ModbusReadCommandParameters)CommandParameters).StartAddress;
+                ushort address = ((ModbusReadCommandParameters)CommandParameters).StartAddress;
                 ushort value = 0;
                 byte mask = 1;
 
@@ -85,10 +85,10 @@ namespace Modbus.ModbusFunctions
                         value = (ushort)(temp & mask);
                         temp >>= 1;
 
-                        responseValues.Add(new Tuple<PointType, ushort>(PointType.DIGITAL_INPUT, adress), value);
+                        responseValues.Add(new Tuple<PointType, ushort>(PointType.DIGITAL_INPUT, address), value);
 
                         counter++;
-                        adress++;
+                        address++;
 
                         //provera kraja, Quantity-> broj bita
                         if (counter >= ((ModbusReadCommandParameters)CommandParameters).Quantity) break;

@@ -2,14 +2,10 @@ STA 23
 TCP 62565
 
 
-IN_REG  1 3400  0  0  4095  2000  AI  @StrujaPanela  4 #
-HR_INT  1 4600  0  0  4095  1200  AO  @TempBojlera   4 #
-HR_INT  1 4601  0  0  4095  1200  AO  @TempKlime     4 #
-DO_REG  1 4100  0  0     1     0  DO  @PrvaVrata     2 #
-DO_REG  1 4101  0  0     1     0  DO  @DrugaVrata	 2 #
-DO_REG  1 4102  0  0     1     0  DO  @PrviProzor	 2 #
-DO_REG  1 4103  0  0     1     0  DO  @DrugiProzor	 2 #
-DO_REG  1 4104  0  0     1     0  DO  @TreciProzor	 2 #
-DO_REG  1 4105  0  0     1     0  DO  @CetvrtiProzor 2 #
-IN_REG  1 3401  0  0  4095  2000  AI  @SenzorTemp    4 #
-IN_REG  1 3402  0  0  4095  2000  AI  @SenzorPrit    4 #
+IN_REG  1 3400  0  0  12000  5500  AI  @StrujaPanela  4 #
+HR_INT  1 4600  0  0     80	   55  AO  @TempBojlera   4 #
+HR_INT  1 4601  0  10    45    17  AO  @TempKlime     4 #
+DO_REG  2 4100  0  0      1     1  DO  @Vrata		  2 #
+DO_REG  4 4102  0  0      1     1  DO  @Prozor        2 #
+IN_REG  1 3401  0  0     50    21  AI  @SenzorTemp    4 #
+IN_REG  1 3402  0  100 1050  1013  AI  @SenzorPrit    4 #
